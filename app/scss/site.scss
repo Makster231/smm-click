@@ -1,0 +1,28 @@
+﻿//variables:
+@import "settings/reset";
+@import "settings/px-to-rem";
+@import "settings/brand-color";
+@import "settings/grid-variable";
+@import "settings/grid";
+
+/* purgecss start ignore */
+//Components:
+@import "components/wrapper-page";
+@import "components/header-page";
+@import "components/promotion.scss";
+@import "components/application.scss";
+@import "components/companies.scss";
+@import "components/warranty.scss";
+@import "components/cases.scss";
+
+@import "components/footer-page";
+
+//UI:
+@import "UI/btn";
+@import "UI/fonts.scss";
+@import "UI/body-scroll.scss";
+@import "UI/go-to-top.scss";
+@import "UI/default-classes.scss";
+@import "UI/modals.scss";
+
+/* purgecss end ignore */

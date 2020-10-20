@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Regular.eot");
+  src: local("../fonts/gilory/Gilroy Regular"), local("../fonts/gilory/Gilroy-Regular"),
+    url("../fonts/gilory/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Bold.eot");
+  src: local("../fonts/gilory/Gilroy Bold"), local("../fonts/gilory/Gilroy-Bold"),
+    url("../fonts/gilory/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Black.eot");
+  src: local("../fonts/gilory/Gilroy Black"), local("../fonts/gilory/Gilroy-Black"),
+    url("../fonts/gilory/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Black.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Black.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Light.eot");
+  src: local("../fonts/gilory/Gilroy Light"), local("../fonts/gilory/Gilroy-Light"),
+    url("../fonts/gilory/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Light.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Light.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Semibold.eot");
+  src: local("../fonts/gilory/Gilroy Semibold"), local("../fonts/gilory/Gilroy-Semibold"),
+    url("../fonts/gilory/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Semibold.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Medium.eot");
+  src: local("../fonts/gilory/Gilroy Medium"), local("../fonts/gilory/Gilroy-Medium"),
+    url("../fonts/gilory/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-UltraLight.eot");
+  src: local("../fonts/gilory/Gilroy UltraLight"), local("../fonts/gilory/Gilroy-UltraLight"),
+    url("../fonts/gilory/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-UltraLight.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-UltraLight.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Extrabold.eot");
+  src: local("../fonts/gilory/Gilroy Extrabold"), local("../fonts/gilory/Gilroy-Extrabold"),
+    url("../fonts/gilory/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Extrabold.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Extrabold.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Heavy.eot");
+  src: local("../fonts/gilory/Gilroy Heavy"), local("../fonts/gilory/Gilroy-Heavy"),
+    url("../fonts/gilory/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Heavy.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Heavy.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilory/Gilroy-Thin.eot");
+  src: local("../fonts/gilory/Gilroy Thin"), local("../fonts/gilory/Gilroy-Thin"),
+    url("../fonts/gilory/Gilroy-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gilory/Gilroy-Thin.woff2") format("woff2"),
+    url("../fonts/gilory/Gilroy-Thin.woff") format("woff"),
+    url("../fonts/gilory/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+////////////////////////////////
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Bold.eot");
+  src: local("../fonts/norms/TT Norms Pro Bold"), local("../fonts/norms/TTNormsPro-Bold"),
+    url("../fonts/norms/TTNormsPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Bold.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Bold.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Thin.eot");
+  src: local("../fonts/norms/TT Norms Pro Thin"), local("../fonts/norms/TTNormsPro-Thin"),
+    url("../fonts/norms/TTNormsPro-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Thin.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Thin.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-ExtraBold.eot");
+  src: local("../fonts/norms/TT Norms Pro ExtraBold"), local("../fonts/norms/TTNormsPro-ExtraBold"),
+    url("../fonts/norms/TTNormsPro-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-ExtraBold.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-ExtraBold.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Regular.eot");
+  src: local("../fonts/norms/TT Norms Pro Regular"), local("../fonts/norms/TTNormsPro-Regular"),
+    url("../fonts/norms/TTNormsPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Regular.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Regular.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Light.eot");
+  src: local("../fonts/norms/TT Norms Pro Light"), local("../fonts/norms/TTNormsPro-Light"),
+    url("../fonts/norms/TTNormsPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Light.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Light.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-ExtraLight.eot");
+  src: local("../fonts/norms/TT Norms Pro ExtraLight"), local("../fonts/norms/TTNormsPro-ExtraLight"),
+    url("../fonts/norms/TTNormsPro-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-ExtraLight.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-ExtraLight.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Medium.eot");
+  src: local("../fonts/norms/TT Norms Pro Medium"), local("../fonts/norms/TTNormsPro-Medium"),
+    url("../fonts/norms/TTNormsPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Medium.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Medium.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro ExtraBlack";
+  src: url("../fonts/norms/TTNormsPro-ExtraBlack.eot");
+  src: local("../fonts/norms/TT Norms Pro ExtraBlack"), local("../fonts/norms/TTNormsPro-ExtraBlack"),
+    url("../fonts/norms/TTNormsPro-ExtraBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-ExtraBlack.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-ExtraBlack.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-ExtraBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/norms/TTNormsPro-Black.eot");
+  src: local("../fonts/norms/TT Norms Pro Black"), local("../fonts/norms/TTNormsPro-Black"),
+    url("../fonts/norms/TTNormsPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/norms/TTNormsPro-Black.woff2") format("woff2"),
+    url("../fonts/norms/TTNormsPro-Black.woff") format("woff"),
+    url("../fonts/norms/TTNormsPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}

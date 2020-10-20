@@ -1,0 +1,128 @@
+.cases {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #151515;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: -80px;
+    width: 380px;
+    height: 1180px;
+    z-index: 0;
+    background: url(../../images/blue_color-left.png) center no-repeat;
+    background-size: contain;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: -250px;
+    width: 380px;
+    height: 1250px;
+    z-index: 0;
+    background: url(../../images/blue_color-right.png) center no-repeat;
+    background-size: contain;
+  }
+
+  .bg_money1 {
+    position: absolute;
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 50px;
+  }
+  .bg_money2 {
+    position: absolute;
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    bottom: 200px;
+    right: 50px;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
+  &_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .cases_block {
+      width: calc(50% - 10px);
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      background-color: #212121;
+      border-radius: 6px;
+      padding: 22px 22px 50px 22px;
+
+      img {
+        width: 100%;
+        height: 266px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 25px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+        img {
+          width: 30px;
+          height: auto;
+          margin-right: 25px;
+          margin-bottom: 0;
+          transition: 0.4s ease;
+        }
+        p {
+          font-size: 23px;
+          line-height: 1.2;
+          font-weight: 500;
+          text-decoration: underline;
+          transition: 0.4s ease;
+          color: #4e70ce;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.4);
+          }
+
+          p {
+            color: #f26d2b;
+          }
+        }
+      }
+
+      p {
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.4;
+        width: 280px;
+      }
+    }
+  }
+
+  .btn {
+    max-width: 261px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
