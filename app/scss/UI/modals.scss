@@ -1,19 +1,19 @@
 .fancybox {
   &-content {
-    padding: 0;
+    padding: 0 !important;
     background-color: #212121;
   }
   &-slide--html .fancybox-close-small {
     color: #fff;
 
     @media (min-width: 640px) {
-      color: #8c8c8c;
+      color: #fff !important ;
 
       &:hover {
         svg {
           transform: rotate(180deg);
           transition: 0.4s ease;
-          color: #f26d2b;
+          color: #f26d2b !important;
         }
       }
     }
@@ -26,7 +26,7 @@
 .modal_case,
 .modal_time {
   width: 100%;
-  max-width: 620px;
+  max-width: 620px !important;
   border-radius: 8px;
   &-container {
     background-color: #212121;
@@ -105,7 +105,7 @@
       font-size: 18px;
       color: #343434;
       line-height: 1.4;
-      width: 415px;
+      width: 420px;
       font-weight: 500;
       margin-left: auto;
       margin-right: auto;
@@ -125,7 +125,7 @@
 
 .modal_info {
   width: 100%;
-  max-width: 750px;
+  max-width: 750px !important;
   border-radius: 8px;
   &-container {
     background-color: #212121;

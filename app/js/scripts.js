@@ -61,6 +61,7 @@
     $(".js_companies_slider").slick({
       infinite: true,
       slidesToShow: 4,
+      lazyLoad: 'progressive',
       slidesToScroll: 1,
       arrows: false,
       dots: false
@@ -71,7 +72,11 @@
     //show content after loaded page
     $("body").css("opacity", "1"); //Activate compaines slider
 
-    compaines();
+    compaines(); // activate lazy load
+
+    $(".lazy").Lazy({
+      threshold: 750
+    });
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
