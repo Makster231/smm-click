@@ -6,6 +6,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  @media (max-width: 960px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   h2 {
     width: 100%;
     text-align: center;
@@ -27,6 +31,11 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 960px){
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     li {
       display: block;
       border: 1px solid #fff;
@@ -36,6 +45,12 @@
       position: relative;
       transition: 0.3s ease;
       overflow: hidden;
+
+      @media (max-width: 960px){
+        margin-right: 0;
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 20px;
+      }
       a {
         position: relative;
         display: block;

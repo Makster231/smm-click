@@ -38,6 +38,12 @@
     background-color: darken(#f26d2b, 15%);
   }
 
+  @media (max-width: 960px) {
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
   @keyframes btn-animate {
     0% {
       opacity: 0.3;
