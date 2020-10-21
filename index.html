@@ -40,89 +40,7 @@
       <meta name="theme-color" content="#ffffff">
       <!-- /Favicons -->
    </head>
-   <body>
-      <div class="wrapper-page ">
-      <header class="header" id="header">
-         <div class="header_container-top container">
-            <a href="#" class="header_logo">
-            <img src="./images/logo.png" alt="Logo">
-            </a>
-            <ul class="header_nav js_header-nav ">
-               <li class="header_nav-item">
-                  Выберите соцсеть для продвижения
-               </li>
-               <ul class="submenu">
-                  <li class="header_nav-item">
-                     <a href="#" >
-                     Продвижение ВК
-                     </a>
-                  </li>
-                  <li class="header_nav-item">
-                     <a href="#" >
-                     Продвижение Facebook
-                     </a>
-                  </li>
-                  <li class="header_nav-item">
-                     <a href="#" >
-                     Продвижение Instagram
-                     </a>
-                  </li>
-                  <li class="header_nav-item">
-                     <a href="#" >
-                     Продвижение Одноклассники
-                     </a>
-                  </li>
-               </ul>
-            </ul>
-            <ul class="header_links">
-               <li class="header_links-item">
-                  <a href="#">
-                  <img src="./images/icon-instagram.png" alt="Instagram">
-                  </a>
-               </li>
-               <li class="header_links-item">
-                  <a href="#">
-                  <img src="./images/icon-vk.png" alt="VK">
-                  </a>
-               </li>
-               <li class="header_links-item">
-                  <a href="#">
-                  <img src="./images/icon-facebook.png" alt="facebook">
-                  </a>
-               </li>
-            </ul>
-            <div class="header_contacts">
-               <a href="tel:+7(919)812-71-74">+7 (919) 812-71-74</a>
-               <a href="#" class="order_recall">Заказать звонок</a>
-            </div>
-         </div>
-         <section class="header_container-bottom container">
-            <h1>
-               Получите первых клиентов <br> из социальных сетей <span>уже через 2 дня</span>
-            </h1>
-            <ul>
-               <li>
-                  <p>
-                     Найдем клиентов в любой социальной сети
-                  </p>
-               </li>
-               <li>
-                  <p>
-                     Индивидуальные стратегии под Ваш бизнес
-                  </p>
-               </li>
-               <li>
-                  <p>
-                     Лёгкий старт
-                  </p>
-               </li>
-            </ul>
-            <button type="button" data-href="#promotion" class="btn js_scroll">
-            Посмотреть список услуг
-            </button>
-            <img src="./images/header/logos.png" class="header_bottom-logos" alt="Logos">
-         </section>
-      </header>
+  
 
 <main class="main-page js_main-page">
   <section class="promotion" id="promotion">
@@ -155,7 +73,7 @@
         </ul>
     </div>
 </section>
-  <section class="application">
+  <section class="application js_application">
 
    <img data-src="./images/application/money1.png" class="bg_money1 lazy" alt="money">
    <img data-src="./images/application/money2.png" class="bg_money2 lazy" alt="money">
@@ -171,8 +89,8 @@
        </h2>
        <div class="application_steps js_application_steps">
           <div class="application_steps-top">
-             <div class="application_step">
-                <img data-src="./images/application/loop.png" class="lazy" alt="Loop">
+             <div class="application_step js_application-step--1">
+                <img data-src="./images/application/loop.png" class="lazy " alt="Loop">
                 <p>
                    Мы анализируем все каналы <br>
                    в Интернете, по которым <br>
@@ -180,7 +98,7 @@
                 </p>
              </div>
              <img data-src="./images/application/arrow_1.png" class="arrow_1 lazy" alt="arrow">
-             <div class="application_step">
+             <div class="application_step  js_application-step--2">
                 <img data-src="./images/application/graf.png" class="lazy" alt="graf">
                 <p>
                    Мы используем специальные сервисы, <br>
@@ -191,7 +109,7 @@
              </div>
           </div>
           <div class="application_steps-bottom">
-             <div class="application_step">
+             <div class="application_step js_application-step--3">
                 <img data-src="./images/application/mich.png" class="lazy" alt="mich">
                 <p>
                    Вы получаете полное представление <br>
@@ -206,19 +124,19 @@
           </div>
        </div>
 
-       <div class="application_form">
+       <form class="application_form">
         <div class="application_form-top">
             <div class="form-validate">
                 <label for="name"></label>
-                <input type="text" name="name" id="name" autocomplete="off" placeholder="Ваше имя">
+                <input type="text" name="name" id="name"  placeholder="Ваше имя">
             </div>
             <div class="form-validate">
                 <label for="tel"></label>
-                <input type="tel" name="tel" id="tel"  autocomplete="off" placeholder="Ваш номер телефона">
+                <input type="tel" name="tel" id="tel"  placeholder="Ваш номер телефона" data-mask="+0 (000) 000 00 00">
             </div>
             <div class="form-validate">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" autocomplete="off" placeholder="Ваше E-mail">
+                <input type="email" name="email" id="email"  placeholder="Ваше E-mail">
             </div>
         </div>
         <div class="application_form-bottom">
@@ -232,7 +150,7 @@
                 </a>
             </p>
         </div>
-       </div>
+       </form>
     </div>
     
  </section>
@@ -288,22 +206,22 @@
         </p>
 
        </div>
-        <div class="warranty_bottom">
-            <div class="warranty_bottom-block">
+        <div class="warranty_bottom js_warranty_bottom">
+            <div class="warranty_bottom-block js_warranty_bottom-block--1">
                 <img data-src="./images/warranty/contract.png" class="lazy" alt="Contract">
                 <p>
                     Работаем на результат.
                     Оплата по договору
                 </p>
             </div>
-            <div class="warranty_bottom-block">
+            <div class="warranty_bottom-block js_warranty_bottom-block--2">
                 <img data-src="./images/warranty/time.png" class="lazy" alt="time">
                 <p>
                     Соблюдаем сроки
                     или делаем бесплатно
                 </p>
             </div>
-            <div class="warranty_bottom-block">
+            <div class="warranty_bottom-block js_warranty_bottom-block--3">
                 <img data-src="./images/warranty/shield.png" class="lazy" alt="shield">
                 <p>
                     Прозрачность. <br>
@@ -325,8 +243,8 @@
             Кейсы
         </h2>
  
-        <div class="cases_blocks">
-            <div class="cases_block">
+        <div class="cases_blocks js_cases_blocks">
+            <div class="cases_block js_cases-block--1">
                 <img data-src="./images/cases/img_1.jpeg" class="lazy" alt="Image">
 
                 <a  href="#" target="_blank" class="cases_block-link">
@@ -343,7 +261,7 @@
                     сообщества. Контент.
                 </p>
             </div>
-            <div class="cases_block">
+            <div class="cases_block js_cases-block--2">
                 <img data-src="./images/cases/img_1.jpeg" class="lazy" alt="Image">
 
                 <a  href="#" target="_blank" class="cases_block-link">
@@ -359,7 +277,7 @@
                     сообщества. Контент.
                 </p>
             </div>
-            <div class="cases_block">
+            <div class="cases_block js_cases-block--3">
                 <img data-src="./images/cases/img_1.jpeg" class="lazy" alt="Image">
 
                 <a  href="#" target="_blank" class="cases_block-link">
@@ -376,7 +294,7 @@
                     сообщества. Контент.
                 </p>
             </div>
-            <div class="cases_block">
+            <div class="cases_block js_cases-block--4">
                 <img data-src="./images/cases/img_1.jpeg" class="lazy" alt="Image">
 
                 <a  href="#" target="_blank" class="cases_block-link">
@@ -431,10 +349,12 @@
     
             <div class="footer_contacts">
                 <a href="tel:+7(919)812-71-74">+7 (919) 812-71-74</a>
-                <a href="#" class="order_recall">Заказать звонок</a>
+                <a href="#modal_recall" data-fancybox="" data-touch="false" class="order_recall">Заказать звонок</a>
             </div>
     </div>
 </footer>
+
+
 
 
 
@@ -592,11 +512,11 @@
         <form class="modal_case-form">
             <div class="form-validate">
                 <label for="form_case_name"></label>
-                <input type="text" name="form_case_name" id="form_case_name" autocomplete="off" placeholder="Ваше имя">
+                <input type="text" name="form_case_name" id="form_case_name"  placeholder="Ваше имя">
             </div>
             <div class="form-validate">
                 <label for="form_case_tel"></label>
-                <input type="tel" name="form_case_tel" id="form_case_tel"  autocomplete="off" placeholder="Ваш номер телефона">
+                <input type="tel" name="form_case_tel" id="form_case_tel"   placeholder="Ваш номер телефона">
             </div>
 
 
@@ -632,11 +552,50 @@
         <form class="modal_time-form">
             <div class="form-validate">
                 <label for="form_time_name"></label>
-                <input type="text" name="form_time_name" id="form_time_name" autocomplete="off" placeholder="Ваше имя">
+                <input type="text" name="form_time_name" id="form_time_name"  placeholder="Ваше имя">
             </div>
             <div class="form-validate">
                 <label for="form_time_tel"></label>
-                <input type="tel" name="form_time_tel" id="form_time_tel"  autocomplete="off" placeholder="Ваш номер телефона">
+                <input type="tel" name="form_time_tel" id="form_time_tel" data-mask="+0 (000) 000 00 00"  placeholder="Ваш номер телефона">
+            </div>
+
+
+        
+            <button type="button" class="btn">
+                Отправить
+            </button>
+
+            <p>
+                Нажимая на кнопку, вы принимаете <a href="#modal_info" data-fancybox="" data-touch="false">
+                Положение и Согласие на обработку персональных данных</a>
+            </p>
+        </form>
+
+    </div>
+
+</div>
+  
+<div class="modal_recall" id="modal_recall" style="display: none">
+
+    <div class="modal_recall-container">
+
+        <h3>
+            Укажите ваши данные и мы вам перезвоним
+        </h3>
+
+        <h6>
+            Оставьте свой телефон и наш менеджер ответит
+            на любые Ваши вопросы
+        </h6>
+
+        <form class="modal_recall-form">
+            <div class="form-validate">
+                <label for="form_recall_name"></label>
+                <input type="text" name="form_recall_name" id="form_recall_name"  placeholder="Ваше имя">
+            </div>
+            <div class="form-validate">
+                <label for="form_recall_tel"></label>
+                <input type="tel" name="form_recall_tel" id="form_recall_tel"   placeholder="Ваш номер телефона">
             </div>
 
 
@@ -662,12 +621,12 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.polyfilled.min.js" integrity="sha512-7kq7qBtasB6e1rth7fGAVQI6HvobtSHWKqIjsEr+21l2spvu8ZRXvRukXPTEPrExSDXpUHI5FH6xlgGZNNCgeQ==" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 <script src="./app/js/scripts.js"></script>
 </body>
 </html>
-
 

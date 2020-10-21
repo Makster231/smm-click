@@ -14,8 +14,11 @@
 @import "components/companies.scss";
 @import "components/warranty.scss";
 @import "components/cases.scss";
-
 @import "components/footer-page";
+
+//Pages
+@import "components/404.scss";
+@import "components/thank-you.scss";
 
 //UI:
 @import "UI/btn";

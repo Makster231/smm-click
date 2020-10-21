@@ -54,7 +54,7 @@ const path = {
 		js: './app/js/',
 		jsComponents: './app/js/component/', 
 		images: './app/images/',
-		fonts: './app/fonts/'
+		fonts: './app/fonts/**/*'
 	},
 
 	watch: {
@@ -67,6 +67,7 @@ const path = {
 const js_plugins = [
 	path.app.jsComponents + 'scroll.js',
 	path.app.jsComponents + 'header-nav.js',
+	path.app.jsComponents + 'animate.js',
 	path.app.jsComponents + 'after-load.js',
 	path.app.jsComponents + 'scripts.js',
 ];
@@ -180,6 +181,12 @@ gulp.task('style:prod', (done) => { //recompile styles from ./app/scss
 	done();
 });
 
+gulp.task('fonts:prod', (done) => { //recompile fonts from ./app/fonts
+	gulp.src(path.app.fonts)
+		.pipe(gulp.dest(path.dist.fonts));
+	done();
+});
+
 gulp.task('js:prod', (done) => { //recompile scripts from ./app/js/components 
 	gulp.src(js_plugins)
 		.pipe(concat('scripts.js'))
@@ -201,6 +208,7 @@ gulp.task('build:prod', //build for PROD env
 		'clean:dist',
 		'html:prod',
 		'style:prod',
+		'fonts:prod',
 		'js:prod'), (done) => {
 
 	done();

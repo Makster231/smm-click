@@ -145,6 +145,10 @@ body { overflow-x: hidden; font-family: "Gilroy", sans-serif !important; }
 
 .header:after { content: ""; position: absolute; left: -150px; top: 135px; width: 550px; height: 900px; background: url(../../images/blue_color-left.png) center no-repeat; z-index: 0; }
 
+.header.header-404 { background: #151515; height: 100vh; box-sizing: border-box; }
+
+.header.header-404:before, .header.header-404:after { content: none; }
+
 .header_container-top { display: flex; flex-direction: row; align-items: center; margin-bottom: 60px; position: relative; z-index: 50; }
 
 .header_container-top .header_logo { width: 130px; height: 71px; display: block; margin-right: 28px; }
@@ -231,7 +235,7 @@ body { overflow-x: hidden; font-family: "Gilroy", sans-serif !important; }
 
 .promotion ul li a { position: relative; display: block; width: 100%; padding: 12px 8px; font-family: "TT Norms Pro"; font-size: 18px; font-weight: 400; line-height: 24px; color: #fff; transition: 0.4s ease; z-index: 5; box-sizing: border-box; }
 
-.promotion ul li:before { content: ""; height: 0; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; background-color: #fff; transition: 0.4s ease; border-radius: 4; z-index: 0; }
+.promotion ul li:before { content: ""; height: 0; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; background-color: #fff; transition: 0.4s ease; border-radius: 4px; z-index: 0; }
 
 .promotion ul li:hover { background-color: #fff; }
 
@@ -405,47 +409,55 @@ body { overflow-x: hidden; font-family: "Gilroy", sans-serif !important; }
 
 .footer .footer_contacts a:hover { color: #ff681e; text-decoration: underline; }
 
+.header_top-404 { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; }
+
+.header.header-404 { background: #151515; height: 100vh; box-sizing: border-box; }
+
+.header.header-404:before, .header.header-404:after { content: none; }
+
+.header.header-404 h1 { color: #f12b2b; font-size: 278px; padding-top: 75px; font-weight: bold; text-align: center; width: 100%; }
+
 .btn { width: 100%; display: block; border: 0; outline: 0; box-shadow: inset 0px -6px 1px 0px #953a0d; padding-top: 30px; padding-bottom: 30px; text-align: center; background-color: #f26d2b; font-size: 20px; color: #fff; border-radius: 100px; transition: 0.3s ease; cursor: pointer; }
 
 .btn:hover { box-shadow: none; background-color: #c4490c; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Regular.eot"); src: local("../fonts/gilory/Gilroy Regular"), local("../fonts/gilory/Gilroy-Regular"), url("../fonts/gilory/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Regular.woff") format("woff"), url("../fonts/gilory/Gilroy-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Regular.eot"); src: local("../fonts/gilory/Gilroy Regular"), local("../fonts/gilory/Gilroy-Regular"), url("../fonts/gilory/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Regular.woff") format("woff"), url("../fonts/gilory/Gilroy-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Bold.eot"); src: local("../fonts/gilory/Gilroy Bold"), local("../fonts/gilory/Gilroy-Bold"), url("../fonts/gilory/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Bold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Bold.woff") format("woff"), url("../fonts/gilory/Gilroy-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Bold.eot"); src: local("../fonts/gilory/Gilroy Bold"), local("../fonts/gilory/Gilroy-Bold"), url("../fonts/gilory/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Bold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Bold.woff") format("woff"), url("../fonts/gilory/Gilroy-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Black.eot"); src: local("../fonts/gilory/Gilroy Black"), local("../fonts/gilory/Gilroy-Black"), url("../fonts/gilory/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Black.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Black.woff") format("woff"), url("../fonts/gilory/Gilroy-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Black.eot"); src: local("../fonts/gilory/Gilroy Black"), local("../fonts/gilory/Gilroy-Black"), url("../fonts/gilory/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Black.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Black.woff") format("woff"), url("../fonts/gilory/Gilroy-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Light.eot"); src: local("../fonts/gilory/Gilroy Light"), local("../fonts/gilory/Gilroy-Light"), url("../fonts/gilory/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Light.woff") format("woff"), url("../fonts/gilory/Gilroy-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Light.eot"); src: local("../fonts/gilory/Gilroy Light"), local("../fonts/gilory/Gilroy-Light"), url("../fonts/gilory/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Light.woff") format("woff"), url("../fonts/gilory/Gilroy-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Semibold.eot"); src: local("../fonts/gilory/Gilroy Semibold"), local("../fonts/gilory/Gilroy-Semibold"), url("../fonts/gilory/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Semibold.woff") format("woff"), url("../fonts/gilory/Gilroy-Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Semibold.eot"); src: local("../fonts/gilory/Gilroy Semibold"), local("../fonts/gilory/Gilroy-Semibold"), url("../fonts/gilory/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Semibold.woff") format("woff"), url("../fonts/gilory/Gilroy-Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Medium.eot"); src: local("../fonts/gilory/Gilroy Medium"), local("../fonts/gilory/Gilroy-Medium"), url("../fonts/gilory/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Medium.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Medium.woff") format("woff"), url("../fonts/gilory/Gilroy-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Medium.eot"); src: local("../fonts/gilory/Gilroy Medium"), local("../fonts/gilory/Gilroy-Medium"), url("../fonts/gilory/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Medium.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Medium.woff") format("woff"), url("../fonts/gilory/Gilroy-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-UltraLight.eot"); src: local("../fonts/gilory/Gilroy UltraLight"), local("../fonts/gilory/Gilroy-UltraLight"), url("../fonts/gilory/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/gilory/Gilroy-UltraLight.woff") format("woff"), url("../fonts/gilory/Gilroy-UltraLight.ttf") format("truetype"); font-weight: 200; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-UltraLight.eot"); src: local("../fonts/gilory/Gilroy UltraLight"), local("../fonts/gilory/Gilroy-UltraLight"), url("../fonts/gilory/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/gilory/Gilroy-UltraLight.woff") format("woff"), url("../fonts/gilory/Gilroy-UltraLight.ttf") format("truetype"); font-weight: 200; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Extrabold.eot"); src: local("../fonts/gilory/Gilroy Extrabold"), local("../fonts/gilory/Gilroy-Extrabold"), url("../fonts/gilory/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Extrabold.woff") format("woff"), url("../fonts/gilory/Gilroy-Extrabold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Extrabold.eot"); src: local("../fonts/gilory/Gilroy Extrabold"), local("../fonts/gilory/Gilroy-Extrabold"), url("../fonts/gilory/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Extrabold.woff") format("woff"), url("../fonts/gilory/Gilroy-Extrabold.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Heavy.eot"); src: local("../fonts/gilory/Gilroy Heavy"), local("../fonts/gilory/Gilroy-Heavy"), url("../fonts/gilory/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Heavy.woff") format("woff"), url("../fonts/gilory/Gilroy-Heavy.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Heavy.eot"); src: local("../fonts/gilory/Gilroy Heavy"), local("../fonts/gilory/Gilroy-Heavy"), url("../fonts/gilory/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Heavy.woff") format("woff"), url("../fonts/gilory/Gilroy-Heavy.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Thin.eot"); src: local("../fonts/gilory/Gilroy Thin"), local("../fonts/gilory/Gilroy-Thin"), url("../fonts/gilory/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Thin.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Thin.woff") format("woff"), url("../fonts/gilory/Gilroy-Thin.ttf") format("truetype"); font-weight: 100; font-style: normal; }
+@font-face { font-family: "Gilroy"; src: url("../fonts/gilory/Gilroy-Thin.eot"); src: local("../fonts/gilory/Gilroy Thin"), local("../fonts/gilory/Gilroy-Thin"), url("../fonts/gilory/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/gilory/Gilroy-Thin.woff2") format("woff2"), url("../fonts/gilory/Gilroy-Thin.woff") format("woff"), url("../fonts/gilory/Gilroy-Thin.ttf") format("truetype"); font-weight: 100; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Bold.eot"); src: local("../fonts/norms/TT Norms Pro Bold"), local("../fonts/norms/TTNormsPro-Bold"), url("../fonts/norms/TTNormsPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Bold.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Bold.woff") format("woff"), url("../fonts/norms/TTNormsPro-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Bold.eot"); src: local("../fonts/norms/TT Norms Pro Bold"), local("../fonts/norms/TTNormsPro-Bold"), url("../fonts/norms/TTNormsPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Bold.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Bold.woff") format("woff"), url("../fonts/norms/TTNormsPro-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Thin.eot"); src: local("../fonts/norms/TT Norms Pro Thin"), local("../fonts/norms/TTNormsPro-Thin"), url("../fonts/norms/TTNormsPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Thin.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Thin.woff") format("woff"), url("../fonts/norms/TTNormsPro-Thin.ttf") format("truetype"); font-weight: 100; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Thin.eot"); src: local("../fonts/norms/TT Norms Pro Thin"), local("../fonts/norms/TTNormsPro-Thin"), url("../fonts/norms/TTNormsPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Thin.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Thin.woff") format("woff"), url("../fonts/norms/TTNormsPro-Thin.ttf") format("truetype"); font-weight: 100; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-ExtraBold.eot"); src: local("../fonts/norms/TT Norms Pro ExtraBold"), local("../fonts/norms/TTNormsPro-ExtraBold"), url("../fonts/norms/TTNormsPro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraBold.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraBold.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-ExtraBold.eot"); src: local("../fonts/norms/TT Norms Pro ExtraBold"), local("../fonts/norms/TTNormsPro-ExtraBold"), url("../fonts/norms/TTNormsPro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraBold.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraBold.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Regular.eot"); src: local("../fonts/norms/TT Norms Pro Regular"), local("../fonts/norms/TTNormsPro-Regular"), url("../fonts/norms/TTNormsPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Regular.woff") format("woff"), url("../fonts/norms/TTNormsPro-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Regular.eot"); src: local("../fonts/norms/TT Norms Pro Regular"), local("../fonts/norms/TTNormsPro-Regular"), url("../fonts/norms/TTNormsPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Regular.woff") format("woff"), url("../fonts/norms/TTNormsPro-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Light.eot"); src: local("../fonts/norms/TT Norms Pro Light"), local("../fonts/norms/TTNormsPro-Light"), url("../fonts/norms/TTNormsPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Light.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Light.woff") format("woff"), url("../fonts/norms/TTNormsPro-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Light.eot"); src: local("../fonts/norms/TT Norms Pro Light"), local("../fonts/norms/TTNormsPro-Light"), url("../fonts/norms/TTNormsPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Light.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Light.woff") format("woff"), url("../fonts/norms/TTNormsPro-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-ExtraLight.eot"); src: local("../fonts/norms/TT Norms Pro ExtraLight"), local("../fonts/norms/TTNormsPro-ExtraLight"), url("../fonts/norms/TTNormsPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraLight.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraLight.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraLight.ttf") format("truetype"); font-weight: 200; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-ExtraLight.eot"); src: local("../fonts/norms/TT Norms Pro ExtraLight"), local("../fonts/norms/TTNormsPro-ExtraLight"), url("../fonts/norms/TTNormsPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraLight.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraLight.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraLight.ttf") format("truetype"); font-weight: 200; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Medium.eot"); src: local("../fonts/norms/TT Norms Pro Medium"), local("../fonts/norms/TTNormsPro-Medium"), url("../fonts/norms/TTNormsPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Medium.woff") format("woff"), url("../fonts/norms/TTNormsPro-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Medium.eot"); src: local("../fonts/norms/TT Norms Pro Medium"), local("../fonts/norms/TTNormsPro-Medium"), url("../fonts/norms/TTNormsPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Medium.woff") format("woff"), url("../fonts/norms/TTNormsPro-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro ExtraBlack"; src: url("../fonts/norms/TTNormsPro-ExtraBlack.eot"); src: local("../fonts/norms/TT Norms Pro ExtraBlack"), local("../fonts/norms/TTNormsPro-ExtraBlack"), url("../fonts/norms/TTNormsPro-ExtraBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraBlack.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraBlack.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraBlack.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "TT Norms Pro ExtraBlack"; src: url("../fonts/norms/TTNormsPro-ExtraBlack.eot"); src: local("../fonts/norms/TT Norms Pro ExtraBlack"), local("../fonts/norms/TTNormsPro-ExtraBlack"), url("../fonts/norms/TTNormsPro-ExtraBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-ExtraBlack.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-ExtraBlack.woff") format("woff"), url("../fonts/norms/TTNormsPro-ExtraBlack.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
 
-@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Black.eot"); src: local("../fonts/norms/TT Norms Pro Black"), local("../fonts/norms/TTNormsPro-Black"), url("../fonts/norms/TTNormsPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Black.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Black.woff") format("woff"), url("../fonts/norms/TTNormsPro-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: "TT Norms Pro"; src: url("../fonts/norms/TTNormsPro-Black.eot"); src: local("../fonts/norms/TT Norms Pro Black"), local("../fonts/norms/TTNormsPro-Black"), url("../fonts/norms/TTNormsPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/norms/TTNormsPro-Black.woff2") format("woff2"), url("../fonts/norms/TTNormsPro-Black.woff") format("woff"), url("../fonts/norms/TTNormsPro-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
 
 body::-webkit-scrollbar { width: 12px; }
 
@@ -476,35 +488,35 @@ body::-webkit-scrollbar-thumb { background: #f26d2b; border-radius: 10px; box-sh
 
 .fancybox-bg { background-color: #000; }
 
-.modal_case, .modal_time { width: 100%; max-width: 620px !important; border-radius: 8px; }
+.modal_recall, .modal_case, .modal_time { width: 100%; max-width: 620px !important; border-radius: 8px; }
 
-.modal_case-container, .modal_time-container { background-color: #212121; padding: 40px 80px; }
+.modal_recall-container, .modal_case-container, .modal_time-container { background-color: #212121; padding: 40px 80px; }
 
-.modal_case-container h3, .modal_time-container h3 { color: #fff; font-size: 23px; line-height: 1.4; font-weight: 500; text-align: center; margin-bottom: 30px; width: 340px; margin-left: auto; margin-right: auto; }
+.modal_recall-container h3, .modal_case-container h3, .modal_time-container h3 { color: #fff; font-size: 23px; line-height: 1.4; font-weight: 500; text-align: center; margin-bottom: 30px; width: 340px; margin-left: auto; margin-right: auto; }
 
-.modal_case-container h3 span, .modal_time-container h3 span { color: #f26d2b; }
+.modal_recall-container h3 span, .modal_case-container h3 span, .modal_time-container h3 span { color: #f26d2b; }
 
-.modal_case-container h6, .modal_time-container h6 { color: #5f5f5f; font-size: 18px; text-align: center; width: 414px; line-height: 1.4; margin-left: auto; margin-right: auto; display: block; margin-bottom: 40px; }
+.modal_recall-container h6, .modal_case-container h6, .modal_time-container h6 { color: #5f5f5f; font-size: 18px; text-align: center; width: 414px; line-height: 1.4; margin-left: auto; margin-right: auto; display: block; margin-bottom: 40px; }
 
-.modal_case-container .form-validate, .modal_time-container .form-validate { margin-bottom: 20px; }
+.modal_recall-container .form-validate, .modal_case-container .form-validate, .modal_time-container .form-validate { margin-bottom: 20px; }
 
-.modal_case-container .form-validate:last-of-type, .modal_time-container .form-validate:last-of-type { margin-bottom: 40px; }
+.modal_recall-container .form-validate:last-of-type, .modal_case-container .form-validate:last-of-type, .modal_time-container .form-validate:last-of-type { margin-bottom: 40px; }
 
-.modal_case-container .form-validate label, .modal_time-container .form-validate label { display: none; }
+.modal_recall-container .form-validate label, .modal_case-container .form-validate label, .modal_time-container .form-validate label { display: none; }
 
-.modal_case-container .form-validate input, .modal_time-container .form-validate input { padding: 18px; width: 100%; box-sizing: border-box; display: block; font-size: 18px; color: #fff; outline: 0; border-radius: 6px; border: 0; box-shadow: none; transition: 0.3s ease; background-color: #2c2c2c; }
+.modal_recall-container .form-validate input, .modal_case-container .form-validate input, .modal_time-container .form-validate input { padding: 18px; width: 100%; box-sizing: border-box; display: block; font-size: 18px; color: #fff; outline: 0; border-radius: 6px; border: 0; box-shadow: none; transition: 0.3s ease; background-color: #2c2c2c; }
 
-.modal_case-container .form-validate input::placeholder, .modal_time-container .form-validate input::placeholder { color: #444444; }
+.modal_recall-container .form-validate input::placeholder, .modal_case-container .form-validate input::placeholder, .modal_time-container .form-validate input::placeholder { color: #444444; }
 
-.modal_case-container .form-validate input:focus, .modal_case-container .form-validate input:hover, .modal_time-container .form-validate input:focus, .modal_time-container .form-validate input:hover { box-shadow: inset 0 0 4px 1px rgba(242, 109, 43, 0.6); }
+.modal_recall-container .form-validate input:focus, .modal_recall-container .form-validate input:hover, .modal_case-container .form-validate input:focus, .modal_case-container .form-validate input:hover, .modal_time-container .form-validate input:focus, .modal_time-container .form-validate input:hover { box-shadow: inset 0 0 4px 1px rgba(242, 109, 43, 0.6); }
 
-.modal_case-container .btn, .modal_time-container .btn { max-width: 261px; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
+.modal_recall-container .btn, .modal_case-container .btn, .modal_time-container .btn { max-width: 261px; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
 
-.modal_case-container p, .modal_time-container p { font-size: 18px; color: #343434; line-height: 1.4; width: 420px; font-weight: 500; margin-left: auto; margin-right: auto; }
+.modal_recall-container p, .modal_case-container p, .modal_time-container p { font-size: 18px; color: #343434; line-height: 1.4; width: 420px; font-weight: 500; margin-left: auto; margin-right: auto; }
 
-.modal_case-container p a, .modal_time-container p a { color: #404040; text-decoration: underline; transition: 0.3s ease; }
+.modal_recall-container p a, .modal_case-container p a, .modal_time-container p a { color: #404040; text-decoration: underline; transition: 0.3s ease; }
 
-.modal_case-container p a:hover, .modal_time-container p a:hover { color: #f26d2b; }
+.modal_recall-container p a:hover, .modal_case-container p a:hover, .modal_time-container p a:hover { color: #f26d2b; }
 
 .modal_info { width: 100%; max-width: 750px !important; border-radius: 8px; }
 
@@ -512,7 +524,7 @@ body::-webkit-scrollbar-thumb { background: #f26d2b; border-radius: 10px; box-sh
 
 .modal_info-container h3 { color: #fff; font-size: 23px; line-height: 1.4; font-weight: 500; text-align: center; margin-bottom: 30px; }
 
-.modal_info-container--content { height: 500px; padding: 20px; overflow: scroll; border-radius: 6px; background-color: #2c2c2c; overflow: -moz-scrollbars-none; -ms-overflow-style: none; scrollbar-width: none; }
+.modal_info-container--content { height: 500px; padding: 20px; overflow: scroll; border-radius: 6px; background-color: #2c2c2c; overflow: -moz-scrollbars-none; -ms-overflow-style: none; }
 
 .modal_info-container--content::-webkit-scrollbar { width: 0px; background: transparent; }
 

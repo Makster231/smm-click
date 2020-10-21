@@ -23,6 +23,17 @@
     background: url(../../images/blue_color-left.png) center no-repeat;
     z-index: 0;
   }
+
+  &.header-404 {
+    background: #151515;
+    height: 100vh;
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
   &_container-top {
     display: flex;
     flex-direction: row;
