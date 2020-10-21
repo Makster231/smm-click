@@ -417,6 +417,38 @@ body { overflow-x: hidden; font-family: "Gilroy", sans-serif !important; }
 
 .header.header-404 h1 { color: #f12b2b; font-size: 278px; padding-top: 75px; font-weight: bold; text-align: center; width: 100%; }
 
+.thank-you { background-color: #151515; width: 100vw; height: 100vh; display: flex; flex-direction: row; justify-content: center; align-items: center; }
+
+.thank-you_container { width: 370px; }
+
+.thank-you_checked { width: 130px; height: 130px; border-radius: 50%; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 20px; background-color: #78c94f; margin-left: auto; margin-right: auto; }
+
+.thank-you_checked img { width: 60px; }
+
+.thank-you h2 { font-size: 23px; color: #fff; font-weight: 500; margin-bottom: 20px; line-height: 1.3; text-align: center; }
+
+.thank-you p { color: #5f5f5f; text-align: center; margin-bottom: 20px; font-size: 18px; font-weight: 500; line-height: 1.3; }
+
+.thank-you p a { color: #fff; transition: 0.4s ease; }
+
+.thank-you p a:hover { text-decoration: underline; color: #f26d2b; }
+
+.thank-you ul { display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; }
+
+.thank-you ul a, .thank-you ul li { display: block; }
+
+.thank-you ul li { margin-right: 20px; }
+
+.thank-you ul li a { width: 40px; height: 40px; border-radius: 50%; display: flex; background-color: #6db3f5; flex-direction: row; justify-content: center; align-items: center; transition: 0.4s ease; }
+
+.thank-you ul li a:hover { background-color: #258ef0; transform: scale(1.4); }
+
+.thank-you ul li:last-of-type { margin-right: 0; }
+
+.thank-you ul li:last-of-type a { background-color: #8ef454; }
+
+.thank-you ul li:last-of-type a:hover { background-color: #5fec0f; }
+
 .btn { width: 100%; display: block; border: 0; outline: 0; box-shadow: inset 0px -6px 1px 0px #953a0d; padding-top: 30px; padding-bottom: 30px; text-align: center; background-color: #f26d2b; font-size: 20px; color: #fff; border-radius: 100px; transition: 0.3s ease; cursor: pointer; }
 
 .btn:hover { box-shadow: none; background-color: #c4490c; }

@@ -202,11 +202,13 @@ $(document).ready(function () {
 
     noDigits(); //Activate popup modal after 30s
 
-    setTimeout(function () {
-      $.fancybox.open($("#modal_time"), {
-        touch: false
-      });
-    }, 45000);
+    if (!$(".js_thank-you").length && !$(".js_page-404").length) {
+      setTimeout(function () {
+        $.fancybox.open($("#modal_time"), {
+          touch: false
+        });
+      }, 1000);
+    }
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
