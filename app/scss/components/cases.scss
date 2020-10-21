@@ -66,6 +66,10 @@
       font-size: 30px;
       margin-bottom: 30px;
     }
+    @media (max-width: 640px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   &_blocks {
@@ -87,6 +91,10 @@
       @media (max-width: 960px) {
         padding: 17px 17px 30px 17px;
       }
+      @media (max-width: 640px) {
+        width: 100%;
+        padding: 15px 15px 20px 15px;
+      }
 
       .cases_block-description {
         margin-bottom: 25px;
@@ -101,6 +109,10 @@
 
         @media (max-width: 960px) {
           margin-bottom: 20px;
+        }
+
+        @media (max-width: 640px) {
+          height: 200px;
         }
       }
 
@@ -164,7 +176,6 @@
     margin-right: auto;
     margin-top: 20px;
 
-    
     @media (max-width: 960px) {
       margin-top: 0;
     }

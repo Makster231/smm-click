@@ -23,6 +23,11 @@
       font-size: 30px;
       margin-bottom: 30px;
     }
+
+    @media (max-width: 640px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   ul {
@@ -31,7 +36,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 960px){
+    @media (max-width: 960px) {
       flex-wrap: wrap;
       justify-content: space-between;
     }
@@ -45,12 +50,6 @@
       position: relative;
       transition: 0.3s ease;
       overflow: hidden;
-
-      @media (max-width: 960px){
-        margin-right: 0;
-        width: calc((100% - 20px) / 2);
-        margin-bottom: 20px;
-      }
       a {
         position: relative;
         display: block;
@@ -97,6 +96,17 @@
 
       &:last-of-type {
         margin-right: 0;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 960px) {
+        margin-right: 0;
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 20px !important;
+      }
+
+      @media (max-width: 640px) {
+        width: 100%;
       }
     }
   }

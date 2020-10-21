@@ -6,7 +6,16 @@
       slidesToShow: 4,
       lazyLoad: 'progressive',
       slidesToScroll: 2,
-      dots: true
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+      ]
     });
   }
 

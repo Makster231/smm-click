@@ -44,6 +44,12 @@
     padding-bottom: 18px;
   }
 
+  @media (max-width: 640px) {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   @keyframes btn-animate {
     0% {
       opacity: 0.3;

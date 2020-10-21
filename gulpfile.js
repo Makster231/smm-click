@@ -67,6 +67,7 @@ const path = {
 const js_plugins = [
 	path.app.jsComponents + 'scroll.js',
 	path.app.jsComponents + 'header-nav.js',
+	path.app.jsComponents + 'burger-menu.js',
 	path.app.jsComponents + 'animate.js',
 	path.app.jsComponents + 'after-load.js',
 	path.app.jsComponents + 'scripts.js',
