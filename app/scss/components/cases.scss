@@ -3,6 +3,10 @@
   padding-bottom: 60px;
   background-color: #151515;
   position: relative;
+  @media (max-width: 1500px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &:before {
     content: "";
@@ -53,6 +57,11 @@
     line-height: 1;
     color: #fff;
     margin-bottom: 60px;
+
+    @media (max-width: 1500px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &_blocks {
@@ -68,6 +77,8 @@
       background-color: #212121;
       border-radius: 6px;
       padding: 22px 22px 50px 22px;
+      position: relative;
+      z-index: 5;
 
       img {
         width: 100%;

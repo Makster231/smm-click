@@ -3,6 +3,10 @@
   padding-bottom: 60px;
   background-color: #151515;
   position: relative;
+  @media (max-width: 1500px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &:before {
     content: "";
@@ -64,6 +68,11 @@
     span {
       font-weight: bold;
       color: #ff681e;
+    }
+
+    @media (max-width: 1500px) {
+      font-size: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -138,6 +147,17 @@
         color: #f26d2b;
       }
     }
+
+    @media (max-width: 1500px) {
+      img {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   &_form {
@@ -147,6 +167,8 @@
     border: 1px solid #f26d2b;
     padding: 22px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 5;
 
     &-top {
       display: flex;

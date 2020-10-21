@@ -90,5 +90,28 @@ $(document).ready(() => {
         AnimationScene('.js_cases-block--4', tl_team_header);
     }
 
+    //Promotion pages
+
+    if (document.querySelector('.js_promotion_slider')) {
+      const tl_team_header = new TimelineMax();
+      
+      tl_team_header.from('.js_promotion_slider-item--1', 0.6, {
+          y: '40%',
+          opacity: 0,
+      });
+      tl_team_header.from('.js_promotion_slider-item--2', 0.6, {
+        y: '40%',
+          opacity: 0,
+      });
+      tl_team_header.from('.js_promotion_slider-item--3', 0.9, {
+        y: '40%',
+          opacity: 0,
+      });
+      AnimationScene('.js_promotion_slider', tl_team_header);
+  }
+
+
+    
+
   }
 });

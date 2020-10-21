@@ -24,6 +24,11 @@
       font-weight: bold;
       text-align: center;
       width: 100%;
+
+      @media (max-width: 1500px) {
+        font-size: 250px;
+        padding-top: 0;
+      }
     }
   }
 }

@@ -1,7 +1,14 @@
 ﻿.header {
   padding-top: 30px;
   background: url(../../images/header/bg1.jpeg) 0% 0% no-repeat;
-  background-size: 100%;
+
+  @media (min-width: 1440px) {
+    background-size: 100%;
+  }
+
+  @media (max-width: 1500px) {
+    padding-top: 20px;
+  }
 
   &:before {
     content: "";
@@ -42,6 +49,10 @@
     position: relative;
     z-index: 50;
 
+    @media (max-width: 1500px) {
+      margin-bottom: 40px;
+    }
+
     .header_logo {
       width: 130px;
       height: 71px;
@@ -71,7 +82,7 @@
         right: 12px;
         width: 21px;
         height: 18px;
-        background: url(../../images/header/arrow_down.svg) center no-repeat;
+        background: url(../../images/arrow_down.svg) center no-repeat;
         background-size: contain;
       }
 
@@ -100,6 +111,15 @@
         top: 0;
         position: relative;
         background-color: #151515;
+
+        li {
+          padding: 0;
+          a {
+            display: block;
+            box-sizing: border-box;
+            padding: 22px 42px 22px 22px;
+          }
+        }
       }
 
       &:hover {
@@ -197,6 +217,11 @@
     position: relative;
     z-index: 5;
     padding-bottom: 60px;
+
+    @media (max-width: 1500px) {
+      padding-bottom: 40px;
+    }
+
     h1 {
       margin-bottom: 45px;
       display: block;
@@ -211,6 +236,11 @@
         font-weight: bold;
         color: #ff681e;
       }
+
+      @media (max-width: 1500px) {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
     }
 
     ul {
@@ -223,6 +253,10 @@
         margin-bottom: 28px;
         font-size: 18px;
         color: #fff;
+
+        @media (max-width: 1500px) {
+          margin-bottom: 20px;
+        }
 
         &:before {
           content: "";
@@ -263,6 +297,10 @@
             background: url(../../images/header/icon-rocket.png) center
               no-repeat;
           }
+
+          @media (max-width: 1500px) {
+            margin-bottom: 30px;
+          }
         }
       }
     }
@@ -278,6 +316,11 @@
       width: 800px;
       height: 800px;
       z-index: 0;
+
+      @media (max-width: 1500px) {
+        bottom: -130px;
+        right: -250px;
+      }
     }
   }
 }

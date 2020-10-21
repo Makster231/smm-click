@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #151515;
+  @media (max-width: 1500px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   h2 {
     width: 100%;
@@ -11,16 +15,69 @@
     line-height: 1;
     color: #fff;
     margin-bottom: 60px;
+
+    @media (max-width: 1500px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &_slider {
-    width: 100%;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
+
     .slick-track {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
+
+    .slick-prev {
+      left: 0;
+      top: 70%;
+      background: url(../../images/arrow_down.svg) center no-repeat;
+      transform: rotate(90deg);
+      &:before {
+        content: none;
+      }
+
+      &:hover {
+        background: url(../../images/arrow_down-active.svg) center no-repeat;
+      }
+    }
+    .slick-next {
+      right: 0;
+      top: 70%;
+      background: url(../../images/arrow_down.svg) center no-repeat;
+      transform: rotate(-90deg);
+      &:before {
+        content: none;
+      }
+
+      &:hover {
+        background: url(../../images/arrow_down-active.svg) center no-repeat;
+      }
+    }
+
+    .slick-dots {
+      bottom: -50px;
+      li {
+        & button:before {
+          color: #404040;
+          opacity: 1;
+        }
+
+        &.slick-active {
+          & button:before {
+            color: #f26d2b;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
     a {
       text-align: center;
       display: block;

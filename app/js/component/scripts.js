@@ -5,11 +5,11 @@
       infinite: true,
       slidesToShow: 4,
       lazyLoad: 'progressive',
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false
+      slidesToScroll: 2,
+      dots: true
     });
   }
+
   
   function noDigits() {
     $("input[type=text]").on("keyup",function(){
@@ -44,12 +44,12 @@
     //Add masks to input text 
     noDigits();
     //Activate popup modal after 30s
-    if(!$(".js_thank-you").length && !$(".js_page-404").length){
-      setTimeout(function() {
-        $.fancybox.open($("#modal_time"), {
-          touch: false
-        });
-      }, 1000);
-    }
+    // if(!$(".js_thank-you").length && !$(".js_page-404").length){
+    //   setTimeout(function() {
+    //     $.fancybox.open($("#modal_time"), {
+    //       touch: false
+    //     });
+    //   }, 45000);
+    // }
   });
 })(window.jQuery, window, document);
