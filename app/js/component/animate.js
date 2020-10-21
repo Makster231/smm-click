@@ -249,4 +249,42 @@ $(document).ready(() => {
 
 
     }
+
+    if(document.querySelector('.js_thank-you')){
+        const controller = new ScrollMagic.Controller();
+
+        function AnimationScene(section, tween, durationTime, offsetValue) {
+            const scene = new ScrollMagic.Scene({
+                    triggerElement: section,
+                    triggerHook: 0.55,
+                    duration: durationTime,
+                    offset: offsetValue,
+                })
+                .reverse(true)
+                .setTween(tween)
+                .addTo(controller);
+        }
+
+        // thank you
+        if (document.querySelector('.js_thank-you')) {
+            const tl_team_header = new TimelineMax();
+            tl_team_header.from('.js_thank-you--anim1, .js_thank-you--anim2, .js_thank-you--anim3', 0.9, {
+                y: '60%',
+                opacity: 0,
+            });
+            tl_team_header.from('.js_thank-you--anim4', 0.6, {
+                x: '-10%',
+                opacity: 0,
+            });
+            
+            tl_team_header.from('.js_thank-you--anim5', 0.6, {
+                x: '10%',
+                opacity: 0,
+            });
+            AnimationScene('.js_thank-you', tl_team_header);
+        }
+
+
+
+    }
 });

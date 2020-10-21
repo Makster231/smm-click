@@ -110,17 +110,6 @@
     }
   }
 
-  &.header-404 {
-    background: #151515;
-    height: 100vh;
-    box-sizing: border-box;
-
-    &:before,
-    &:after {
-      content: none;
-    }
-  }
-
   &_container-top {
     display: flex;
     flex-direction: row;
@@ -142,20 +131,18 @@
     }
 
     .header_logo {
-      width: 130px;
-      height: 71px;
       display: block;
-      margin-right: 28px;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
+      padding-right: 28px;
+      width: 133px;
+      height: 76px;
+      background: url("../../images/css_sprites1.png") -10px -10px;
 
       @media (max-width: 960px) {
-        min-width: 130px;
-        min-height: 71px;
         margin-right: 10px;
+      }
+
+      @media (max-width: 640px) {
+        padding-right: 0;
       }
     }
 
@@ -182,6 +169,7 @@
 
       @media (max-width: 960px) {
         margin-right: 15px;
+        width: 320px;
 
         &:after {
           top: 23px;
@@ -270,7 +258,7 @@
       margin-right: 40px;
 
       @media (max-width: 960px) {
-        margin-right: 10px;
+        margin-right: 0;
       }
 
       &-item {
@@ -287,7 +275,9 @@
           display: block;
         }
 
-        img {
+        .icon_facebook,
+        .icon_telegram,
+        .icon_vk {
           transition: 0.3s ease;
 
           &:hover {
@@ -418,11 +408,6 @@
           top: 0;
           display: block;
         }
-        @media (max-width: 640px) {
-          &:before {
-            background-size: contain !important;
-          }
-        }
 
         &:first-of-type {
           padding-top: 31px;
@@ -430,15 +415,15 @@
           &:before {
             width: 67px;
             height: 68px;
-            background: url(../../images/header/icon-money.png) center no-repeat;
+            background: url("../../images/css_sprites1.png") -259px -91px;
           }
 
           @media (max-width: 640px) {
             padding-top: 10px;
             padding-bottom: 15px;
             &:before {
-              width: 60px;
-              height: 60px;
+              transform: scale(0.8);
+              top: -5px;
             }
           }
         }
@@ -449,16 +434,16 @@
           &:before {
             width: 71px;
             height: 53px;
-            background: url(../../images/header/icon-target.png) center
-              no-repeat;
+            background: url("../../images/css_sprites1.png") -98px -212px;
           }
 
           @media (max-width: 640px) {
             padding-top: 15px;
             padding-bottom: 15px;
             &:before {
-              width: 60px;
-              height: 60px;
+              transform: scale(0.8);
+
+              top: 4px;
             }
           }
         }
@@ -470,8 +455,7 @@
           &:before {
             width: 72px;
             height: 86px;
-            background: url(../../images/header/icon-rocket.png) center
-              no-repeat;
+            background: url("../../images/css_sprites1.png") -10px -106px;
           }
 
           @media (max-width: 1500px) {
@@ -481,9 +465,10 @@
           @media (max-width: 640px) {
             padding-top: 15px;
             padding-bottom: 15px;
+
             &:before {
-              width: 60px;
-              height: 60px;
+              top: -15px;
+              transform: scale(0.8);
             }
           }
         }

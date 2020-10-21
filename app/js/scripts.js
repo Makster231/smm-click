@@ -51,6 +51,22 @@
 
 
 (function ($, window, document) {
+  function preventDefault(e) {
+    e.preventDefault();
+  }
+
+  function disableScroll() {
+    document.body.addEventListener('touchmove', preventDefault, {
+      passive: false
+    });
+  }
+
+  function enableScroll() {
+    document.body.removeEventListener('touchmove', preventDefault, {
+      passive: false
+    });
+  }
+
   function burgerMenu() {
     $(".js_header_nav-mob--burger").click(function () {
       var $this = $(this);
@@ -58,9 +74,11 @@
       if (!$this.hasClass("js_active")) {
         $("body").addClass("js_burger-active");
         $this.addClass("js_active");
+        disableScroll();
       } else {
         $("body").removeClass("js_burger-active");
         $this.removeClass("js_active");
+        enableScroll();
       }
     });
   }
@@ -347,6 +365,41 @@ $(document).ready(function () {
       }
     }
   }
+
+  if (document.querySelector('.js_thank-you')) {
+    var _AnimationScene = function _AnimationScene(section, tween, durationTime, offsetValue) {
+      var scene = new ScrollMagic.Scene({
+        triggerElement: section,
+        triggerHook: 0.55,
+        duration: durationTime,
+        offset: offsetValue
+      }).reverse(true).setTween(tween).addTo(_controller);
+    }; // thank you
+
+
+    var _controller = new ScrollMagic.Controller();
+
+    if (document.querySelector('.js_thank-you')) {
+      var _tl_team_header19 = new TimelineMax();
+
+      _tl_team_header19.from('.js_thank-you--anim1, .js_thank-you--anim2, .js_thank-you--anim3', 0.9, {
+        y: '60%',
+        opacity: 0
+      });
+
+      _tl_team_header19.from('.js_thank-you--anim4', 0.6, {
+        x: '-10%',
+        opacity: 0
+      });
+
+      _tl_team_header19.from('.js_thank-you--anim5', 0.6, {
+        x: '10%',
+        opacity: 0
+      });
+
+      _AnimationScene('.js_thank-you', _tl_team_header19);
+    }
+  }
 });
 
 (function ($, window, document) {
@@ -403,13 +456,14 @@ $(document).ready(function () {
     }); //Add masks to input text 
 
     noDigits(); //Activate popup modal after 30s
-    // if(!$(".js_thank-you").length && !$(".js_page-404").length){
-    //   setTimeout(function() {
-    //     $.fancybox.open($("#modal_time"), {
-    //       touch: false
-    //     });
-    //   }, 45000);
-    // }
+
+    if (!$(".js_thank-you").length && !$(".js_page-404").length) {
+      setTimeout(function () {
+        $.fancybox.open($("#modal_time"), {
+          touch: false
+        });
+      }, 45000);
+    }
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
