@@ -13,7 +13,9 @@
         })
     }
     $(() => {
-        burgerMenu();
+        if($(window).width() < 640){
+            burgerMenu();
+        }
     });
 })(window.jQuery, window, document);
     

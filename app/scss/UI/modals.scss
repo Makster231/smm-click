@@ -36,7 +36,7 @@
     max-width: 540px !important;
   }
   @media (max-width: 640px) {
-    max-width: 290px !important;
+    max-width: 100% !important;
   }
   &-container {
     background-color: #212121;
@@ -46,7 +46,7 @@
       padding: 25px 40px;
     }
     @media (max-width: 640px) {
-      padding: 15px 20px;
+      padding: 25px 10px 20px;
     }
 
     h3 {
@@ -180,7 +180,7 @@
     max-width: 540px !important;
   }
   @media (max-width: 640px) {
-    max-width: 290px !important;
+    max-width: 100% !important;
   }
   &-container {
     background-color: #212121;

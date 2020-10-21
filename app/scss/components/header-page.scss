@@ -1,6 +1,27 @@
 ﻿.header {
   padding-top: 30px;
-  background: url(../../images/header/bg1.jpeg) 0% 0% no-repeat;
+  background-color: #151515;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 555px;
+    height: 750px;
+    z-index: 0;
+    background: url(../../images/orange_color-right.png) center no-repeat;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: -150px;
+    top: 135px;
+    width: 550px;
+    height: 900px;
+    background: url(../../images/blue_color-left.png) center no-repeat;
+    z-index: 0;
+  }
 
   @media (min-width: 1440px) {
     background-size: 100%;
@@ -10,31 +31,32 @@
     padding-top: 20px;
   }
 
-  // &:before {
-  //   content: "";
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  //   width: 555px;
-  //   height: 750px;
-  //   z-index: 0;
-  //   background: url(../../images/orange_color-right.png) center no-repeat;
-  // }
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   left: -150px;
-  //   top: 135px;
-  //   width: 550px;
-  //   height: 900px;
-  //   background: url(../../images/blue_color-left.png) center no-repeat;
-  //   z-index: 0;
-  // }
+  @media (max-width: 640px) {
+    &:before {
+      right: 0;
+      top: 0;
+      width: 555px;
+      height: 750px;
+      z-index: 0;
+      background: url(../../images/orange_color-right.png) center no-repeat;
+    }
+    &:after {
+      left: -10px;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 640px) {
+    background: url(../../images/header/bg1.jpeg) 0% 0% no-repeat;
+  }
 
   .header_nav-mob {
     display: flex;
     width: 100%;
     align-items: center;
+    position: relative;
+    z-index: 5;
     &--burger {
       display: none;
     }
@@ -470,6 +492,7 @@
 
     .btn {
       max-width: 361px;
+      z-index: 5;
     }
 
     .header_bottom-logos {
@@ -487,6 +510,12 @@
       @media (max-width: 960px) {
         bottom: -180px;
         right: -220px;
+      }
+      @media (max-width: 640px) {
+        bottom: 0;
+        right: -120px;
+        width: 320px;
+        height: 320px;
       }
     }
   }
