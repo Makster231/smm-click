@@ -19,18 +19,18 @@
 
     h1 {
       color: #f12b2b;
-      font-size: 278px;
-      padding-top: 75px;
       font-weight: bold;
       text-align: center;
       width: 100%;
+      font-size: 150px;
 
-      @media (max-width: 1500px) {
+      @media (min-width: 640px) {
         font-size: 250px;
         padding-top: 0;
       }
-      @media (max-width: 640px){
-       font-size: 150px;
+      @media (min-width: 1500px) {
+        font-size: 278px;
+        padding-top: 75px;
       }
     }
   }

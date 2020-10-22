@@ -33,22 +33,7 @@
     goTohref();
     activateRocket();
   });
-})(window.jQuery, window, document); // (function ($, window, document) {
-//     function nav (){
-//         $(".js_header-nav li, .js_header-nav ul").mouseover(function(){
-//             let $this = $(this);
-//             $this.closest(".js_header-nav").addClass("js_active");
-//         })
-//         $(".js_header-nav li").mouseleave(function(){
-//             let $this = $(this);
-//             $this.closest(".js_header-nav").removeClass("js_active");
-//         })
-//     }
-//       $(() => {
-//         nav ()
-//       });
-//     })(window.jQuery, window, document);
-
+})(window.jQuery, window, document);
 
 (function ($, window, document) {
   function preventDefault(e) {
@@ -426,6 +411,15 @@ $(document).ready(function () {
     });
   }
 
+  function casesSlider() {
+    $(".js_cases_block-description").on("click", function () {
+      $(".js_modal_cases-info--slider").slick({
+        dots: true,
+        arrows: false
+      });
+    });
+  }
+
   function noDigits() {
     $("input[type=text]").on("keyup", function () {
       var $this = $(this);
@@ -449,13 +443,15 @@ $(document).ready(function () {
     //show content after loaded page
     $("body").css("opacity", "1"); //Activate compaines slider
 
-    compaines(); //Activate lazy load
+    compaines(); //Activate cases slider
+
+    casesSlider(); //Add masks to input text 
+
+    noDigits(); //Activate lazy load
 
     $(".lazy").Lazy({
       threshold: 750
-    }); //Add masks to input text 
-
-    noDigits(); //Activate popup modal after 30s
+    }); //Activate popup modal after 45s
 
     if (!$(".js_thank-you").length && !$(".js_page-404").length) {
       setTimeout(function () {

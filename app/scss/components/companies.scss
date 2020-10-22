@@ -1,33 +1,32 @@
 .compaines {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #151515;
-  @media (max-width: 1500px) {
+  @media (min-width: 960px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  @media (max-width: 960px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  @media (min-width: 1500px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   h2 {
     width: 100%;
     text-align: center;
-    font-size: 38px;
     font-weight: 500;
     line-height: 1;
     color: #fff;
-    margin-bottom: 60px;
-
-    @media (max-width: 1500px) {
+    font-size: 24px;
+    margin-bottom: 20px;
+    @media (min-width: 640px) {
       font-size: 30px;
       margin-bottom: 30px;
     }
 
-    @media (max-width: 640px) {
-      font-size: 24px;
-      margin-bottom: 20px;
+    @media (min-width: 1500px) {
+      margin-bottom: 60px;
+      font-size: 38px;
     }
   }
 
@@ -36,10 +35,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-
-    @media (max-width: 640px) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
 
     .slick-track {
       display: flex;
@@ -49,8 +45,8 @@
 
     .slick-prev {
       left: 0;
-      top: 70%;
       background: url(../../images/arrow_down.svg) center no-repeat;
+      top: 65%;
       transform: rotate(90deg);
       &:before {
         content: none;
@@ -59,15 +55,15 @@
       &:hover {
         background: url(../../images/arrow_down-active.svg) center no-repeat;
       }
-      
-      @media (max-width: 640px) {
-        top: 65%;
+
+      @media (min-width: 640px) {
+        top: 70%;
       }
     }
     .slick-next {
       right: 0;
-      top: 70%;
       background: url(../../images/arrow_down.svg) center no-repeat;
+      top: 65%;
       transform: rotate(-90deg);
       &:before {
         content: none;
@@ -77,16 +73,15 @@
         background: url(../../images/arrow_down-active.svg) center no-repeat;
       }
 
-      
-      @media (max-width: 640px) {
-        top: 65%;
+      @media (min-width: 640px) {
+        top: 70%;
       }
-
-
     }
 
     .slick-dots {
-      bottom: -50px;
+      bottom: -20px;
+      left: 0;
+
       li {
         & button:before {
           color: #404040;
@@ -101,19 +96,21 @@
         }
       }
 
-      @media (max-width: 640px) {
-        bottom: -20px;
-        left: 0;
+      @media (min-width: 640px) {
+        bottom: -50px;
+        left: unset;
       }
     }
 
     a {
       text-align: center;
       display: block;
-
-      @media (max-width: 640px){
+      img {
+        transform: scale(0.9);
+      }
+      @media (min-width: 640px) {
         img {
-          transform: scale(0.9);
+          transform: unset;
         }
       }
     }

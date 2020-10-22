@@ -17,12 +17,12 @@
 
   span {
     z-index: 20;
-    padding-top: 22px;
-    padding-bottom: 22px;
     display: block;
     width: 100%;
     overflow: hidden;
     border-radius: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &:after {
@@ -43,7 +43,7 @@
     background-color: darken(#f26d2b, 15%);
   }
 
-  @media (max-width: 960px) {
+  @media (min-width: 640px) {
     font-size: 16px;
 
     span {
@@ -52,15 +52,12 @@
     }
   }
 
-  @media (max-width: 640px) {
-    font-size: 18px;
-    display: block;
-    width: 100%;
-
+  @media (min-width: 960px) {
     span {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 22px;
+      padding-bottom: 22px;
     }
+    font-size: 18px;
   }
 
   @keyframes btn-animate {

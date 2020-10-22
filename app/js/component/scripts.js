@@ -18,6 +18,19 @@
       ]
     });
   }
+
+  function casesSlider(){
+
+    $(".js_cases_block-description").on("click", function(){
+      $(".js_modal_cases-info--slider").slick({
+            dots: true,
+            arrows: false
+          });
+
+    })
+
+    
+  }
   
   function noDigits() {
     $("input[type=text]").on("keyup",function(){
@@ -44,14 +57,16 @@
     //show content after loaded page
     $("body").css("opacity", "1");
     //Activate compaines slider
-    compaines ()
+    compaines ();
+    //Activate cases slider
+    casesSlider();
+    //Add masks to input text 
+    noDigits();
     //Activate lazy load
     $(".lazy").Lazy({
       threshold: 750,
     });
-    //Add masks to input text 
-    noDigits();
-    //Activate popup modal after 30s
+    //Activate popup modal after 45s
     if(!$(".js_thank-you").length && !$(".js_page-404").length){
       setTimeout(function() {
         $.fancybox.open($("#modal_time"), {
