@@ -53,6 +53,17 @@
     })
   }
 
+  function faceLink (){
+    window.FACELINK_WIDGET_CONFIG = {
+      "page": "wwhkm74g2",
+      "type": "rectangle",
+      "text": "Поговори со мной",
+      "color": "#673ab7",
+      "position": "right"
+   }
+  }
+
+
   $(() => {
     //show content after loaded page
     $("body").css("opacity", "1");
@@ -74,5 +85,7 @@
         });
       }, 45000);
     }
+    //Activate faceLink
+    faceLink ()
   });
 })(window.jQuery, window, document);

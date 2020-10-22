@@ -22,8 +22,11 @@
 
     &:before,
     &:after {
-      // content: none;
-      z-index: 0;
+      height: 100%;
+    }
+
+    &:after {
+      height: calc(100% - 135px);
     }
 
     .header_container-bottom {

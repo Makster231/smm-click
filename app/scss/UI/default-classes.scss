@@ -1,0 +1,7 @@
+.hidden_on-tablet {
+  display: inline;
+
+  @media (min-width: 640px) {
+    display: none !important;
+  }
+}

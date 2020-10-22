@@ -24,19 +24,19 @@
     }
   }
   &.page-ok {
-    .icon_img {
+    img {
       right: -80px;
       top: -10px;
     }
   }
   &.page-vk {
-    .icon_img {
+    img {
       right: -80px;
       top: -10px;
     }
   }
   &.page-fb {
-    .icon_img {
+    img {
       top: -10px;
     }
   }
@@ -56,24 +56,24 @@
     }
 
     &.page-fb {
-      .icon_img {
+      img {
         top: -15px;
       }
     }
 
     &.page-vk {
-      .icon_img {
+      img {
         top: -15px;
       }
     }
 
     &.page-inst {
-      .icon_img {
+      img {
         top: -10px;
       }
     }
     &.page-ok {
-      .icon_img {
+      img {
         right: -60px;
         top: -15px;
       }
@@ -89,7 +89,7 @@
     margin-bottom: 60px;
     position: relative;
 
-    .icon_img {
+    img {
       margin-left: 20px;
       position: absolute;
       right: -60px;
@@ -101,7 +101,7 @@
       font-size: 30px;
       margin-bottom: 30px;
 
-      .icon_img {
+      img {
         transform: scale(0.6);
       }
     }
@@ -111,7 +111,7 @@
       width: 100% !important;
       text-align: center;
 
-      .icon_img {
+      img {
         display: none;
       }
     }
@@ -219,7 +219,8 @@
           height: 100%;
           width: 30px;
           height: 30px;
-          background: url("../../images/css_sprites1.png") -359px -134px;
+          background: url("../../images/icon-check-active.png") center no-repeat;
+          background-size: contain;
         }
 
         @media (max-width: 1500px) {

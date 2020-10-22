@@ -132,19 +132,21 @@
 
     .header_logo {
       display: block;
-      padding-right: 20px;
-      margin-right: 8px;
+      margin-right: 28px;
       width: 133px;
       height: 76px;
-      background: url("../../images/css_sprites1.png") -10px -10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
 
       @media (max-width: 960px) {
-        margin-right: 0;
-        padding-right: 10px;
+        margin-right: 10px;
       }
 
       @media (max-width: 640px) {
-        padding-right: 0;
+        margin-right: 0;
       }
     }
 
@@ -275,15 +277,15 @@
 
         a {
           display: block;
-        }
 
-        .icon_facebook,
-        .icon_telegram,
-        .icon_vk {
-          transition: 0.3s ease;
+          img {
+            transition: 0.3s ease;
+          }
 
           &:hover {
-            transform: scale(1.2);
+            img {
+              transform: scale(1.2);
+            }
           }
         }
       }
@@ -409,6 +411,7 @@
           left: 0;
           top: 0;
           display: block;
+          background-size: contain !important;
         }
 
         &:first-of-type {
@@ -417,7 +420,7 @@
           &:before {
             width: 67px;
             height: 68px;
-            background: url("../../images/css_sprites1.png") -259px -91px;
+            background: url("../../images/icon-money.png") center no-repeat;
           }
 
           @media (max-width: 640px) {
@@ -436,7 +439,7 @@
           &:before {
             width: 71px;
             height: 53px;
-            background: url("../../images/css_sprites1.png") -98px -212px;
+            background: url("../../images/icon-target.png") center no-repeat;
           }
 
           @media (max-width: 640px) {
@@ -457,7 +460,7 @@
           &:before {
             width: 72px;
             height: 86px;
-            background: url("../../images/css_sprites1.png") -10px -106px;
+            background: url("../../images/icon-rocket.png") center no-repeat;
           }
 
           @media (max-width: 1500px) {

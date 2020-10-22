@@ -4,6 +4,7 @@ body {
 
   @media (max-width: 640px) {
     &.js_burger-active {
+      overflow: hidden;
       main,
       footer,
       .header_container-bottom {

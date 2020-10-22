@@ -439,6 +439,16 @@ $(document).ready(function () {
     });
   }
 
+  function faceLink() {
+    window.FACELINK_WIDGET_CONFIG = {
+      "page": "wwhkm74g2",
+      "type": "rectangle",
+      "text": "Поговори со мной",
+      "color": "#673ab7",
+      "position": "right"
+    };
+  }
+
   $(function () {
     //show content after loaded page
     $("body").css("opacity", "1"); //Activate compaines slider
@@ -459,7 +469,10 @@ $(document).ready(function () {
           touch: false
         });
       }, 45000);
-    }
+    } //Activate faceLink
+
+
+    faceLink();
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
