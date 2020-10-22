@@ -132,13 +132,14 @@
 
     .header_logo {
       display: block;
-      padding-right: 28px;
+      margin-right: 28px;
       width: 133px;
       height: 76px;
       background: url("../../images/css_sprites1.png") -10px -10px;
 
       @media (max-width: 960px) {
-        margin-right: 10px;
+        margin-right: 0;
+        padding-right: 10px;
       }
 
       @media (max-width: 640px) {
