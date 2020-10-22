@@ -137,13 +137,13 @@
       }
 
       .arrow_1 {
-        display: none;
+        display: none !important;
 
         @media (min-width: 640px) {
           object-fit: contain;
           width: 210px;
           height: 50px;
-          display: block;
+          display: block !important;
         }
         @media (min-width: 960px) {
           width: 277px;
@@ -185,7 +185,7 @@
         display: none !important;
 
         @media (min-width: 640px) {
-          display: block;
+          display: block !important;
           width: 120px;
           height: 120px;
           object-fit: contain;
@@ -365,10 +365,13 @@
       }
 
       p {
-        font-size: 18px;
+        font-size: 14px;
         color: #343434;
         line-height: 1.4;
         font-weight: 500;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
 
         a {
           color: #404040;
@@ -379,13 +382,11 @@
             color: #f26d2b;
           }
         }
-        width: 100%;
-        margin-top: 20px;
-        text-align: center;
 
         @media (min-width: 640px) {
           width: 418px;
           margin-top: unset;
+          font-size: 16px;
           text-align: unset;
         }
 
